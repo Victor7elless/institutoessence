@@ -1,0 +1,99 @@
+/* ===== CARD SOBRE ===== */
+.Card-Sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c4ae78;
+    color: #fff;
+    border-radius: 0 30px 30px 0;
+    padding: 40px;
+    margin-top: 50px;
+    width: 100%;
+    gap: 40px;
+}
+
+/* ===== TEXTO ===== */
+.Texto-Sobre {
+    flex: 1;
+}
+
+.Texto-Sobre h1 {
+    margin-bottom: 10px;
+}
+
+.Texto-Sobre h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.Texto-Sobre p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.Texto-Sobre button {
+    background-color: #ffffff;
+    color: #c4ae78;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Texto-Sobre button:hover {
+    background-color: #b19d6b;
+    color: #ffffff;
+}
+
+.Texto-Sobre button:active {
+    background-color: #8c7b52;
+}
+
+/* ===== IMAGEM ===== */
+.Img-Sobre {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.Img-Sobre img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* ===== TABLET ===== */
+@media (max-width: 1024px) {
+    .Card-Sobre {
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .Texto-Sobre h2 {
+        font-size: 18px;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .Card-Sobre {
+        flex-direction: column;
+        border-radius: 20px;
+        text-align: center;
+        padding: 25px;
+    }
+
+    .Texto-Sobre {
+        order: 2;
+    }
+
+    .Img-Sobre {
+        order: 1;
+    }
+
+    .Texto-Sobre h2 {
+        font-size: 16px;
+    }
+}

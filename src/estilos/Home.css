@@ -1,0 +1,13 @@
+.home-layout {
+    display: flex;
+    align-items: stretch;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Mobile: empilha */
+@media (max-width: 768px) {
+    .home-layout {
+        flex-direction: column;
+    }
+}

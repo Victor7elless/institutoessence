@@ -1,0 +1,87 @@
+.footer {
+  background-color: #373737;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.agrupamento {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* ===== COLUNAS ===== */
+
+.quem-somos,
+.contatos {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quem-somos h2,
+.contatos h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #f4ce6c;
+}
+
+.quem-somos a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.quem-somos a:hover {
+  color: #f4ce6c;
+}
+
+/* ===== LOGO ===== */
+
+.footer-logo {
+  text-align: center;
+  color: #fff;
+}
+
+.footer-logo img {
+  max-width: 160px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+/* ===== REDES ===== */
+
+.redes-footer {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width: 768px) {
+  .agrupamento {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .quem-somos,
+  .contatos {
+    align-items: center;
+  }
+
+  .redes-footer {
+    justify-content: center;
+  }
+}

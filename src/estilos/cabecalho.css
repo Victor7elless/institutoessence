@@ -1,0 +1,128 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== CABEÇALHO ===== */
+.cabecalho {
+    width: 100%;
+    height: 95px;
+    background-color: #373737;
+    border-bottom: 10px solid #F4CE6C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* ===== LOGO ===== */
+.Logo2 {
+    width: 150px;
+}
+
+/* ===== MENU ===== */
+.Navigate {
+    display: none;
+    gap: 35px;
+}
+
+.Navigate a {
+    color: #F4CE6C;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* underline */
+.Navigate a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #F4CE6C;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.Navigate a:hover::after {
+    transform: scaleX(1);
+}
+
+/* ===== REDES ===== */
+.Redes {
+    display: flex;
+    gap: 15px;
+}
+
+.Redes img {
+    width: 40px;
+    height: 40px;
+}
+
+/* ===== HAMBÚRGUER ===== */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #F4CE6C;
+    border-radius: 2px;
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 769px) {
+    .Navigate {
+        display: flex;
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 28px;
+        z-index: 1002;
+    }
+
+    .Navigate {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #373737;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        border-bottom: 5px solid #F4CE6C;
+        z-index: 1001;
+    }
+
+    .Navigate.active {
+        display: flex;
+    }
+
+    .Redes {
+        display: none;
+    }
+
+    .Logo2 {
+        width: 120px;
+    }
+}
