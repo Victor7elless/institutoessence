@@ -34,9 +34,24 @@ function Cabecalho() {
 
       {/* REDES */}
       <div className="Redes">
-        <img src={Instagram} alt="Instagram" />
-        <img src={Facebook} alt="Facebook" />
+        <a
+          href="https://www.instagram.com/institutoessencee/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Instagram} alt="Instagram" />
+        </a>
+
+        <a
+          href="https://www.facebook.com/institutoessencee"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={Facebook} alt="Facebook" />
+        </a>
       </div>
+
+
     </header>
   );
 }

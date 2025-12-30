@@ -59,13 +59,33 @@
 
 /* ===== REDES ===== */
 
+/* ===== REDES FOOTER (CORRIGIDO) ===== */
 .redes-footer {
   display: flex;
-  gap: 15px;
+  gap: 10px;                 /* menor espaçamento */
   margin-top: 10px;
-  font-size: 14px;
-  cursor: pointer;
+  justify-content: flex-start;
 }
+
+.redes-footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redes-footer img {
+  width: 52px;               /* TAMANHO PEQUENO */
+  height: 52px;
+  cursor: pointer;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.redes-footer img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
 
 /* ===== MOBILE ===== */
 

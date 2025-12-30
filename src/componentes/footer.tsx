@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "../img/Logo2.png";
+import Instagram from "../img/instagram.png";
+import Facebook from "../img/facebook.png";
 import "../estilos/footer.css";
 
 export default function Footer() {
@@ -31,9 +33,23 @@ export default function Footer() {
           <p>(67) 98473-6871</p>
 
           <div className="redes-footer">
-            <span>Instagram</span>
-            <span>Facebook</span>
+            <a
+              href="https://www.instagram.com/institutoessencee/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Instagram} alt="Instagram" />
+            </a>
+
+            <a
+              href="https://www.facebook.com/institutoessencee"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={Facebook} alt="Facebook" />
+            </a>
           </div>
+
         </div>
 
       </div>

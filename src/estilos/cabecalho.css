@@ -56,16 +56,27 @@
     transform: scaleX(1);
 }
 
-/* ===== REDES ===== */
+/* ===== REDES (CORREÇÃO DEFINITIVA) ===== */
 .Redes {
     display: flex;
     gap: 15px;
+    position: relative;      /* garante camada própria */
+    z-index: 1003;           /* acima do menu e do header */
+    pointer-events: auto;
+}
+
+.Redes a {
+    display: inline-block;   /* cria área clicável real */
+    pointer-events: auto;
 }
 
 .Redes img {
     width: 40px;
     height: 40px;
+    cursor: pointer;
+    pointer-events: auto;
 }
+
 
 /* ===== HAMBÚRGUER ===== */
 .menu-toggle {
