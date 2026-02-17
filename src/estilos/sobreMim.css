@@ -97,3 +97,47 @@
         font-size: 16px;
     }
 }
+
+/* ===== CAROUSEL ===== */
+.Sobre-Carousel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.Carousel-Btn {
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #c4ae78;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.Carousel-Btn:hover {
+    color: #b19d6b;
+}
+
+.Carousel-Btn.left {
+    margin-right: 10px;
+}
+
+.Carousel-Btn.right {
+    margin-left: 10px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .Carousel-Btn {
+        font-size: 30px;
+    }
+    
+    .Sobre-Carousel {
+        touch-action: pan-y;
+    }
+}
+
+

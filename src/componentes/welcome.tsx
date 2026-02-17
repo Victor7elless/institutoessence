@@ -14,7 +14,7 @@ export default function Welcome() {
 <br />Mais do que uma clínica, é um espaço de acolhimento, equilíbrio e reconexão com a sua própria essência.
 Cada detalhe aqui foi pensado para promover bem-estar, saúde e qualidade de vida de dentro para fora.
 </p>
-          <button>Saiba mais</button>
+          
 
         </div>
         <div className='imagem'>

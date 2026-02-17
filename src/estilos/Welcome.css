@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 .main {
     display: flex;
     justify-content: center;
@@ -17,6 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: "Merriweather", serif;
 }
 
 .fundo h1 {
@@ -24,6 +26,8 @@
     padding-left: 8%;
     padding-top: 3%;
     text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .fundo p {
@@ -31,35 +35,20 @@
     font-size: 18px;
     padding-right: 20px;
     padding-left: 8%;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: justify;
+    hyphens: auto;
 }
 
-.fundo button {
-    background-color: #ffffff;
-    color: #c4ae78;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    cursor: pointer;
-    margin-left: 8%;
-    margin-top: 10px;
-    width: fit-content;
-}
 
-.fundo button:hover {
-    background-color: #b19d6b;
-    color: #ffffff;
-}
 
-.fundo button:active {
-    background-color: #8c7b52;
-    color: #ffffff;
-}
+
 
 /* CAROUSEL */
 .imagem {
     width: 60%;
-    height: 70vh; /* 🔥 altura real */
+    height: 70vh;
     overflow: hidden;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -77,7 +66,7 @@
 
     .imagem {
         width: 100%;
-        height: 300px; /* 🔥 carousel grande no mobile */
+        height: 300px;
     }
 
     .fundo {
@@ -86,10 +75,5 @@
         padding: 20px 0;
     }
 
-    .fundo h1,
-    .fundo p,
-    .fundo button {
-        padding-left: 6%;
-        padding-right: 6%;
-    }
+    
 }
