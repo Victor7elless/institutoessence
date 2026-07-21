@@ -1,0 +1,89 @@
+/* ===================== */
+/* DESKTOP */
+/* ===================== */
+
+.painel_contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* CARDS */
+.localidade,
+.contato,
+.horario {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.localidade,
+.horario {
+    background-color: #c4ae78;
+}
+
+.contato {
+    background-color: #d4be84;
+}
+
+/* LINKS */
+.localidade a,
+.contato a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* TEXTOS */
+.localidade p,
+.contato p,
+.horario p {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* IMAGENS */
+.localidade img,
+.contato img,
+.horario img {
+    margin-bottom: 10px;
+    max-width: 60px;
+}
+
+/* ===================== */
+/* 📱 MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+
+    .painel_contato {
+        flex-direction: column; /* 🔥 UM EMBAIXO DO OUTRO */
+    }
+
+    .localidade,
+    .contato,
+    .horario {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    .localidade p,
+    .contato p,
+    .horario p {
+        font-size: 18px;
+    }
+
+    .localidade img,
+    .contato img,
+    .horario img {
+        max-width: 50px;
+    }
+}

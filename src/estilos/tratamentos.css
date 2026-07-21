@@ -1,0 +1,106 @@
+.tratamentos {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.tratamentos h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.cor {
+  color: #c4ae78;
+}
+
+/* ===== DESKTOP ===== */
+
+.cards_tratamentos {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* MAIS ESPAÇO */
+  margin: 40px 60px;
+}
+
+.card {
+  width: 320px;
+  height: 380px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #555;
+}
+
+/* ===== BOTÃO ===== */
+
+.btn_tratamentos {
+  margin-top: 40px;
+  padding: 15px 40px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #c4ae78;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+
+.mobile {
+  display: none;
+}
+
+.mobile-card {
+  width: 90%;
+  min-height: 220px; /* MAIS RETANGULAR */
+  margin: auto;
+  padding: 25px;
+}
+
+/* Swiper ajustes */
+.swiper {
+  padding: 30px 0 60px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #c4ae78;
+}
+
+.swiper-pagination-bullet {
+  background: #c4ae78;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* ===== VISIBILIDADE ===== */
+
+.desktop {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
