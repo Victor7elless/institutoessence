@@ -1,0 +1,193 @@
+/* ===== PÁGINA DE TRATAMENTOS ===== */
+.pag-tratamentos {
+  padding-top: 95px;
+  min-height: 80vh;
+}
+
+/* HERO */
+.pag-hero {
+  background-color: #c4ae78;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px 50px;
+}
+
+.pag-hero h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.pag-hero .cor {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.pag-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ===== TABS ===== */
+.pag-prof-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px 20px 0;
+  flex-wrap: wrap;
+}
+
+.pag-prof-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 16px 28px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 200px;
+  text-align: center;
+}
+
+.pag-prof-tab:hover {
+  border-color: #c4ae78;
+  box-shadow: 0 4px 12px rgba(196,174,120,0.2);
+}
+
+.pag-prof-tab.active {
+  background-color: #c4ae78;
+  border-color: #c4ae78;
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(196,174,120,0.35);
+}
+
+.tab-nome {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.tab-titulo {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* ===== INFO PROFISSIONAL ===== */
+.pag-prof-info {
+  max-width: 750px;
+  margin: 28px auto 0;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.pag-prof-desc {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.pag-prof-registro {
+  font-size: 13px;
+  color: #c4ae78;
+  font-weight: 600;
+}
+
+/* ===== GRID ===== */
+.pag-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 40px 40px 60px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.pag-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.09);
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pag-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 28px rgba(196,174,120,0.25);
+}
+
+.pag-card-icone {
+  font-size: 38px;
+  line-height: 1;
+}
+
+.pag-card h3 {
+  font-size: 17px;
+  color: #373737;
+  margin: 0;
+}
+
+.pag-card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  flex: 1;
+  margin: 0;
+}
+
+.pag-card-btn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 24px;
+  background-color: #c4ae78;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.pag-card-btn:hover {
+  background-color: #b19d6b;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+  .pag-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .pag-hero h1 { font-size: 28px; }
+
+  .pag-prof-tabs {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pag-prof-tab {
+    min-width: 280px;
+  }
+
+  .pag-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 24px 16px 40px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pag-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

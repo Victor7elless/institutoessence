@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+    margin-top: 100px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* CARD DE TEXTO */
+.fundo {
+    width: 40%;
+    height: 70vh;
+    background-color: #c4ae78;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Merriweather", serif;
+}
+
+.fundo h1 {
+    color: #ffffff;
+    padding-left: 8%;
+    padding-top: 3%;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.fundo p {
+    color: #ffffff;
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 8%;
+    line-height: 1.6;
+    font-weight: 400;
+    text-align: justify;
+    hyphens: auto;
+}
+
+
+
+
+
+/* CAROUSEL */
+.imagem {
+    width: 60%;
+    height: 70vh;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+/* ===================== */
+/* 📱 RESPONSIVO MOBILE */
+/* ===================== */
+@media (max-width: 768px) {
+
+    .main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .imagem {
+        width: 100%;
+        height: 300px;
+    }
+
+    .fundo {
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    
+}

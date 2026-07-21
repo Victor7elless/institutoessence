@@ -1,0 +1,386 @@
+/* ===== AVALIAÇÕES ===== */
+.avaliacoes-section {
+  padding: 60px 20px;
+  background-color: #f9f6ef;
+  text-align: center;
+}
+
+.avaliacoes-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.google-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border-radius: 30px;
+  padding: 8px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  font-size: 16px;
+  font-weight: 600;
+  color: #373737;
+}
+
+.google-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.nota-geral {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nota-numero {
+  font-size: 32px;
+  font-weight: 700;
+  color: #373737;
+}
+
+.total-avaliacoes {
+  font-size: 14px;
+  color: #777;
+}
+
+/* ===== ESTRELAS ===== */
+.estrelas {
+  display: flex;
+  gap: 2px;
+}
+
+.estrela {
+  font-size: 18px;
+  color: #ddd;
+}
+
+.estrela.cheia {
+  color: #F4CE6C;
+}
+
+/* ===== CARROSSEL RESPONSIVO ===== */
+.avaliacoes-carousel {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+.swiper-avaliacoes {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+/* ===== CARDS ===== */
+.av-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  min-height: 220px;
+}
+
+.av-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.av-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.av-avatar {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background-color: #c4ae78;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.av-user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.av-nome {
+  font-weight: 600;
+  color: #373737;
+  margin: 0;
+  font-size: 14px;
+}
+
+.av-data {
+  font-size: 12px;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+.av-texto {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0;
+  flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ===== BOTÕES DE NAVEGAÇÃO ===== */
+.swiper-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #c4ae78;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.swiper-nav-btn:hover {
+  background-color: #b39a65;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.swiper-button-prev-custom {
+  left: 0;
+}
+
+.swiper-button-next-custom {
+  right: 0;
+}
+
+/* ===== PAGINAÇÃO CUSTOMIZADA ===== */
+.swiper-pagination-custom {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet-custom {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border: none;
+  padding: 0;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active-custom {
+  background-color: #c4ae78;
+  transform: scale(1.2);
+}
+
+/* ===== EXTRAS: foto, guide, live indicator ===== */
+.av-avatar-foto {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.av-guide {
+  font-size: 11px;
+  color: #4285F4;
+  font-weight: 500;
+}
+
+.av-loading {
+  font-size: 13px;
+  color: #aaa;
+  animation: pulse 1s infinite;
+}
+
+.av-live {
+  font-size: 10px;
+  color: #34A853;
+  margin-left: 2px;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablet: 2 cards */
+@media (max-width: 1024px) {
+  .avaliacoes-carousel {
+    padding: 0 40px;
+  }
+
+  .swiper-nav-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+}
+
+/* Mobile: 1 card */
+@media (max-width: 768px) {
+  .avaliacoes-section {
+    padding: 40px 15px;
+  }
+
+  .avaliacoes-header {
+    margin-bottom: 30px;
+  }
+
+  .avaliacoes-carousel {
+    padding: 0 35px;
+  }
+
+  .swiper-nav-btn {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+  }
+
+  .av-card {
+    padding: 18px;
+    gap: 12px;
+    min-height: 200px;
+  }
+
+  .av-nome {
+    font-size: 13px;
+  }
+
+  .av-texto {
+    font-size: 13px;
+    -webkit-line-clamp: 2;
+  }
+
+  .av-data {
+    font-size: 11px;
+  }
+
+  .swiper-pagination-bullet-custom {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .avaliacoes-section {
+    padding: 30px 10px;
+  }
+
+  .nota-numero {
+    font-size: 28px;
+  }
+
+  .google-badge {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+
+  .google-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .avaliacoes-carousel {
+    padding: 0 30px;
+  }
+
+  .swiper-nav-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+  }
+
+  .av-card {
+    padding: 16px;
+    gap: 10px;
+    min-height: 180px;
+  }
+
+  .av-avatar {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    font-size: 12px;
+  }
+
+  .av-nome {
+    font-size: 12px;
+  }
+
+  .av-texto {
+    font-size: 12px;
+    -webkit-line-clamp: 2;
+  }
+
+  .av-data {
+    font-size: 10px;
+  }
+
+  .estrelas {
+    gap: 1px;
+  }
+
+  .estrela {
+    font-size: 14px;
+  }
+
+  .swiper-pagination-bullet-custom {
+    width: 6px;
+    height: 6px;
+  }
+
+  .swiper-pagination-custom {
+    gap: 6px;
+    margin-top: 16px;
+  }
+}
+
+/* ===== SWIPER OVERRIDE ===== */
+.swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: stretch;
+}

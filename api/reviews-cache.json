@@ -1,0 +1,88 @@
+{
+  "reviews": [
+    {
+      "nome": "Dalva Luna moreira",
+      "avatar": "DL",
+      "foto": "https://lh3.googleusercontent.com/a/ACg8ocJyu6PmXmBe73hztqTUilmzyOAKXRbukpOEx72WcRdGQ9xkNw=s120-c-rp-mo-br100",
+      "nota": 5,
+      "texto": "Em primeiro lugar, quero te agradecer dr carla, fui bem atendida, cheguei na clinica com um quadro de ansiedade e depressão  ,e vc com todo carinho  ouviu minhas queixas e começamos a fazer o tratamento ,a um mês  de tratamento, já me sinto  outra mulher, mas animada sem ansiedade ,e melhorei bastante também a depressão, parabéns pelo seu trabalho",
+      "data": "3 meses atrás",
+      "localGuide": true,
+      "totalReviews": 1
+    },
+    {
+      "nome": "Flavyo Enrik",
+      "avatar": "FE",
+      "foto": "https://lh3.googleusercontent.com/a/ACg8ocJ3AakMNFXjvVFBTfX1xp-lFpq4YKDY2z-YsZFJpPEfYy9T=s120-c-rp-mo-br100",
+      "nota": 5,
+      "texto": "O Instituto é inovador; dra Carla é altamente qualificado com um atendimento extremamente humanizado, ela trata cada paciente como um ser único. O ambiente é lindo... Somos bem atendidos do início ao fim.",
+      "data": "6 meses atrás",
+      "localGuide": true,
+      "totalReviews": 2
+    },
+    {
+      "nome": "Elena Marques",
+      "avatar": "EM",
+      "foto": "https://lh3.googleusercontent.com/a-/ALV-UjW_BWWRbz-Kjh6wlIbaHAB7OAOEZoF6nWHR6bue-NKHtShjZUOM=s120-c-rp-mo-br100",
+      "nota": 5,
+      "texto": "Atendimento de excelência, a doutora Carla maravilhosa superou minhas espectativas em fisioterapia um ambiente acolhedor.Super recomendo.",
+      "data": "7 meses atrás",
+      "localGuide": true,
+      "totalReviews": 13
+    },
+    {
+      "nome": "Valmir Santos",
+      "avatar": "VS",
+      "foto": "https://lh3.googleusercontent.com/a/ACg8ocI27V5grVDOX_6akRUGeamUkSd0nwTe7H1o0BNC-RpNPmn5=s120-c-rp-mo-br100",
+      "nota": 5,
+      "texto": "Fui muito bem atendido e recuperando bem meu pulso que apresentou inflamação aguda. Dra Carla e Fábio, ótimo atendimento.",
+      "data": "um mês atrás",
+      "localGuide": true,
+      "totalReviews": 1
+    },
+    {
+      "nome": "Crislaine de Andrade",
+      "avatar": "CD",
+      "foto": "https://lh3.googleusercontent.com/a-/ALV-UjU5b1rhUKbkjgBpRa4hvVI5-2IF2vBalK8InrgDnaM-FUKsk9U=s120-c-rp-mo-br100",
+      "nota": 5,
+      "texto": "Minha experiência no Instituto Essence foi maravilhosa. Um lugar acolhedor, com cheirinho sofisticado, onde fui muito bem recebida e cuidada por profissionais especializados, com todo capricho! Parabéns Dra Karla e Fabio - Massoterapeuta, vcs são demais 💗👏🏼👏🏼",
+      "data": "6 meses atrás",
+      "localGuide": true,
+      "totalReviews": 2
+    },
+    {
+      "nome": "Serginho",
+      "avatar": "S",
+      "foto": "https://lh3.googleusercontent.com/a-/ALV-UjXa9j4LCe_Jn1korzOuwCDWrx3nv4HOssFD7imPvnpEhmkYcmKFMA=s120-c-rp-mo-br100",
+      "nota": 5,
+      "texto": "Excelente Clínica , estrutura nota 1000, atendimento de excelência, Doutora Carla excelente atendimento , atenciosa , bem humana , ouve o paciente e apresenta um tratamento muito humanizado top , super recomendo.",
+      "data": "9 meses atrás",
+      "localGuide": true,
+      "totalReviews": 10
+    },
+    {
+      "nome": "Fabrício Jara",
+      "avatar": "FJ",
+      "foto": "https://lh3.googleusercontent.com/a/ACg8ocKB45GI956z-JT6oQvDjrSZmdughHhSvXKhQBp22-UK_Kvt5Q=s120-c-rp-mo-br100",
+      "nota": 5,
+      "texto": "Ótimos profissionais, e atendimento. Tivemos bons resultados com tratamento, indico.",
+      "data": "6 meses atrás",
+      "localGuide": true,
+      "totalReviews": 2
+    },
+    {
+      "nome": "Ana Cláudia Moreira",
+      "avatar": "AC",
+      "foto": "https://lh3.googleusercontent.com/a-/ALV-UjVhdCrQTzdXetGYQU43Epe8NjYq4cFgogzBl9DmjoR8R2nogR6Rdw=s120-c-rp-mo-br100",
+      "nota": 5,
+      "texto": "Lugar maravilhoso, aconchegante, muito agradável.\nAtendimento maravilhoso.\nProfissionalismo e muito cuidado.",
+      "data": "9 meses atrás",
+      "localGuide": true,
+      "totalReviews": 6
+    }
+  ],
+  "rating": 5,
+  "total": 24,
+  "fetchedAt": "2026-06-27T17:05:51.156Z",
+  "cached": false
+}

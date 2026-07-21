@@ -1,0 +1,15 @@
+{
+  "name": "instituto-florence-reviews-api",
+  "version": "1.0.0",
+  "description": "API de avaliações Google para o Instituto Florence",
+  "main": "reviews-server.js",
+  "scripts": {
+    "start": "node reviews-server.js",
+    "dev": "node --watch reviews-server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
